@@ -30,7 +30,7 @@ app.post('/Contracts', function (req, res, next) {
 app.get('/Contracts', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    text : 'Hey userName ! You Don\'t have any contracts to review now.'
+    text : 'Hey '+userName+' ! You Don\'t have any contracts to review now.'
   };
   // Loop otherwise..
   if (userName !== 'slackbot') {
